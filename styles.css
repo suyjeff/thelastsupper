@@ -1,0 +1,210 @@
+@font-face {
+    font-family: Patron-Reg;
+    src: url(font/Patron-Regular.otf);
+}
+  
+@font-face {
+    font-family: Patron-Med;
+    src: url(font/Patron-Medium.otf);
+}
+  
+@font-face {
+    font-family: Patron-Bold;
+    src: url(font/Patron-Bold.otf);
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+    padding: 80px;
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#title, #menu-label, h1 {
+    font-family: Patron-Reg;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+    margin: 0;
+}
+
+#menu, h1 {
+    color: black;
+    margin-bottom: 24px;
+    text-align: right;
+}
+
+#menu-container {
+    margin-left: auto;
+}
+
+#menu {
+    background-color: white;
+    height: 100vh;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    /* padding: 80px; */
+    margin-right: -270px;
+}
+
+#menu-label {
+    transition: 0.5s ease-in-out ; 
+}
+
+#menu-label:hover {
+    cursor: pointer;
+    color: #24B0FF;
+}
+
+#close {
+    margin-top: 80px;
+    transition: 0.5s ease-in-out;
+}
+
+#close:hover {
+    cursor: pointer;
+    color: rgb(255, 73, 73);
+}
+
+#close, #cabinet, #about {
+    margin-right: 80px;
+}
+
+#items {
+    position: absolute;
+    bottom: 80px;
+    width: 80%;
+}
+
+.med {
+    font-family: Patron-Med;
+    color: white;
+    font-size: 80px;
+    line-height: 96px;
+    margin-right: 24px;
+    transition: 1.2s ease-out;
+    display: inline-block;
+}
+
+.med:hover span {
+    display: none;
+}
+
+.med:hover {
+    cursor: pointer;
+}
+
+#sausage:hover {
+    color: #FF7272;
+}
+
+#sausage:hover:before {
+    content: "Sausages";
+}
+
+#beef:hover {
+    color: #CE0000;
+}
+
+#beef:hover:before {
+    content: "Cornedbeef";
+}
+
+#chicken:hover {
+    color: #FF7438;
+}
+
+#chicken:hover:before {
+    content: "Chicken";
+}
+
+#meatballs:hover {
+    color: #A8392A;
+}
+
+#meatballs:hover:before {
+    content: "Meatballs";
+}
+
+#liver:hover {
+    color: #6B5CC8;
+}
+
+#liver:hover:before {
+    content: "Liver";
+}
+
+#steak:hover {
+    color: #E0E400;
+}
+
+#steak:hover:before {
+    content: "Steak & Kidney";
+}
+
+#sandwich:hover {
+    color: #00A424;
+}
+
+#sandwich:hover:before {
+    content: "Sandwich";
+}
+
+#dumpling:hover {
+    color: #E61BEA;
+}
+
+#dumpling:hover:before {
+    content: "Dumplings";
+}
+
+#cornish:hover {
+    color: #99D4FF;
+}
+
+#cornish:hover:before {
+    content: "Cornish Pasty";
+}
+
+#omelette:hover {
+    color: #CEA100;
+}
+
+#omelette:hover:before {
+    content: "Omelette";
+}
+
+#salad:hover {
+    color: #8DB716;
+}
+
+#salad:hover:before {
+    content: "Salad";
+}
+
+#mushroom:hover {
+    color: #24B0FF;
+}
+
+#mushroom:hover:before {
+    content: "Mushroom";
+}
+
+#beans:hover {
+    color: #A65532;
+}
+
+#beans:hover:before {
+    content: "Beans & Chips";
+}
+
