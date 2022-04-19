@@ -76,8 +76,60 @@ body {
     color: rgb(255, 73, 73);
 }
 
+#about {
+    transition: 0.5s ease-in-out;
+}
+
+#about:hover {
+    cursor: pointer;
+    color: #6B5CC8;
+}
+
 #close, #cabinet, #about {
     margin-right: 80px;
+}
+
+#big-title {
+    font-family: Patron-Med;
+    color: white;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: left !important;
+    margin-top: 260px;
+    margin-bottom: 80px;
+}
+
+#about-info {
+    color: white;
+    display: flex;
+    column-gap: 136px;
+}
+
+#about-info h2 {
+    font-family: Patron-Reg;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 0;
+}
+
+#about-info p {
+    font-family: Patron-Reg;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 0;
+}
+
+.back {
+    color: white;
+    transition: 0.5s ease-in-out ; 
+}
+
+.back:hover {
+    cursor: pointer;
+    color: #24B0FF !important;
 }
 
 #items {
