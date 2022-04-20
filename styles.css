@@ -156,13 +156,6 @@ body {
     cursor: pointer;
 }
 
-#sausage:hover {
-    color: #FF7272;
-}
-
-#sausage:hover:before {
-    content: "Sausages";
-}
 
 #beef:hover {
     color: #CE0000;
