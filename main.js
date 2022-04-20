@@ -19,24 +19,25 @@ $(document).ready(function() {
     window.location = "about.html";    
   });
 
-  // $("#beef").hover(function() {
-  //   if (!$(this).hasClass("animated")) {
-  //     $(this).dequeue().stop().animate({ color: "#CE0000", content: "beef" });
-  //   }   
-  // }, function() {
-  //   $(this).addClass("animated").animate({ color: "#ffffff", content: "Amiodarone" }, "normal", "linear", function() {
-  //     $(this).removeClass("animated").dequeue();
-  //   });
-  // });
+  //------------------
 
-  // $("#beef").hover(function() {
-  //   $(this).animate({ color: "#CE0000"});
-  // }, function() {
-  //   $(this).animate({ color: "#ffffff"});
-  // });
+  $("#name").mouseover(function() {
+    $(this).fadeOut(function() {
+      $(this).text("Sausages")
+      // $(this).color("#FF7272");
+    }).fadeIn();
+    $(this).css("color", "#FF7272");
+ });
+ 
+  $("#name").mouseout(function() {
+    $(this).fadeOut(500, function() {
+      $(this).text("Intraconazole")
+    }).fadeIn();
+    $(this).css("color", "#FFF");
+  });  
   
 });
-  
+
 
  
 
