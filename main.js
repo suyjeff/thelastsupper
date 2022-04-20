@@ -25,14 +25,14 @@ $(document).ready(function() {
     $(this).fadeOut(function() {
       $(this).text("Sausages")
       // $(this).color("#FF7272");
-    }).fadeIn();
+    }).fadeIn(3000);
     $(this).css("color", "#FF7272");
  });
  
   $("#name").mouseout(function() {
-    $(this).fadeOut(500, function() {
+    $(this).fadeOut(function() {
       $(this).text("Intraconazole")
-    }).fadeIn();
+    }).fadeIn(2000);
     $(this).css("color", "#FFF");
   });  
   
