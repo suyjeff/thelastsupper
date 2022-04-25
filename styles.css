@@ -46,6 +46,16 @@ body {
     color: #ffc107;
 }
 
+#clear {
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+#clear:hover {
+    cursor: pointer;
+    color: #FF7272;
+}
+
 #menu, h1 {
     color: black;
     margin-bottom: 24px;
@@ -65,7 +75,6 @@ body {
     position: absolute;
     right: 0px;
     top: 0;
-    /* padding: 80px; */
     margin-right: -270px;
 }
 
@@ -159,8 +168,8 @@ body {
 
 .art-close {
     position: absolute;
-    color: white;
-    left: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    right: 24px;
     top: 24px;
     z-index: 3;
     transition: 0.5s ease-in-out ; 
@@ -171,13 +180,25 @@ body {
 
 .art-close:hover {
     cursor: pointer;
-    color: #24B0FF;
+    color: white;
+}
+
+.art-drag {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.4);
+    right: 24px;
+    bottom: 24px;
+    z-index: 3;
+    
+    font-family: Patron-Reg;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 .cover {
     position: absolute;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.65;
 }
 
 .pieces {
@@ -185,18 +206,15 @@ body {
     position: absolute;
 }
 
+.pieces:hover {
+    cursor: grab;
+}
+
 #items {
     position: absolute;
     bottom: 80px;
     width: 80%;
 }
-
-/* #shade {
-    width: 100%;
-    height: 100%;
-    color: black;
-    z-index: 5;
-} */
 
 .med {
     font-family: Patron-Med;
@@ -208,108 +226,6 @@ body {
     display: inline-block;
 }
 
-/* .med:hover span {
-    display: none;
-} */
-
 .med:hover {
     cursor: pointer;
 }
-
-
-/* #beef:hover {
-    color: #CE0000;
-}
-
-#beef:hover:before {
-    content: "Cornedbeef";
-} */
-
-/* #chicken:hover {
-    color: #FF7438;
-}
-
-#chicken:hover:before {
-    content: "Chicken";
-}
-
-#meatballs:hover {
-    color: #A8392A;
-}
-
-#meatballs:hover:before {
-    content: "Meatballs";
-}
-
-#liver:hover {
-    color: #6B5CC8;
-}
-
-#liver:hover:before {
-    content: "Liver";
-}
-
-#steak:hover {
-    color: #E0E400;
-}
-
-#steak:hover:before {
-    content: "Steak & Kidney";
-}
-
-#sandwich:hover {
-    color: #00A424;
-}
-
-#sandwich:hover:before {
-    content: "Sandwich";
-}
-
-#dumpling:hover {
-    color: #E61BEA;
-}
-
-#dumpling:hover:before {
-    content: "Dumplings";
-}
-
-#cornish:hover {
-    color: #99D4FF;
-}
-
-#cornish:hover:before {
-    content: "Cornish Pasty";
-}
-
-#omelette:hover {
-    color: #CEA100;
-}
-
-#omelette:hover:before {
-    content: "Omelette";
-}
-
-#salad:hover {
-    color: #8DB716;
-}
-
-#salad:hover:before {
-    content: "Salad";
-}
-
-#mushroom:hover {
-    color: #24B0FF;
-}
-
-#mushroom:hover:before {
-    content: "Mushroom";
-}
-
-#beans:hover {
-    color: #A65532;
-}
-
-#beans:hover:before {
-    content: "Beans & Chips";
-} */
-

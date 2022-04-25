@@ -1,19 +1,3 @@
-var pairs = [ 
-  {"food":"Cornedbeef", "color": "#CE0000", "med":"Amiodarone"}, 
-  {"food":"Sausages", "color": "#FF7272", "med":"Intraconazole"},
-  {"food":"Chicken", "color": "#FF7438", "med":"Morphine"},
-  {"food":"Meatballs", "color": "#A8392A", "med":"Moclobemide"},
-  {"food":"Liver", "color": "#6B5CCB", "med":"Antimuscarinic"},
-  {"food":"Steak & Kidney", "color": "#E0E400", "med":"Ethambutol"},
-  {"food":"Sandwich", "color": "#00A424", "med":"Saquinavir"},
-  {"food":"Dumplings", "color": "#E61BEA", "med":"Lisinopril"},
-  {"food":"Cornish Pasty", "color": "#99D4FF", "med":"Rifampicin"},
-  {"food":"Omelette", "color": "#CEA100", "med":"Ondansetron"},
-  {"food":"Salad", "color": "#8DB716", "med":"Lamivudine"},
-  {"food":"Mushroom", "color": "#24B0FF", "med":"Pyrimethamine"},
-  {"food":"Beans & Chips", "color": "#A65532", "med":"Chips"},
-];
-
 $(document).ready(function() {
 
   $('#menu-label').click(function() {
@@ -65,9 +49,13 @@ $(document).ready(function() {
 
   $(".art-close").click(function() {
     $(this).parent().parent().hide();
+    $("#clear").css("color", "black");
   });
 
-
+  $("#clear").click(function() {
+    $(".pieces").hide();
+    $("#clear").css("color", "black");
+  });
 
   //------------------
 
@@ -75,154 +63,154 @@ $(document).ready(function() {
     $(this).fadeOut(function() {
       $(this).text("Cornedbeef");
     }).fadeIn(1000);
-    $(this).css("color", "#CE0000");
+    $("#beef").css("color", "#CE0000");
   });
   
   $("#amiodarone").mouseout(function() {
     $(this).fadeOut(function() {
       $(this).text("Amiodarone");
     }).fadeIn(500);
-    $(this).css("color", "#FFF");
+    $("#beef").css("color", "#FFF");
   });
 
   $("#intraconazole").mouseover(function() {
     $(this).fadeOut(function() {
       $(this).text("Sausages");
     }).fadeIn(1000);
-    $(this).css("color", "#CE0000");
+    $("#sausage").css("color", "#FF7272");
   });
   
   $("#intraconazole").mouseout(function() {
     $(this).fadeOut(function() {
       $(this).text("Intraconazole");
     }).fadeIn(500);
-    $(this).css("color", "#FFF");
+    $("#sausage").css("color", "#FFF");
   }); 
 
   $("#morphine").mouseover(function() {
     $(this).fadeOut(function() {
       $(this).text("Chicken");
     }).fadeIn(1000);
-    $(this).css("color", "#FF7438");
+    $("#chicken").css("color", "#FF7438");
   });
   
   $("#morphine").mouseout(function() {
     $(this).fadeOut(function() {
       $(this).text("Morphine");
     }).fadeIn(500);
-    $(this).css("color", "#FFF");
+    $("#chicken").css("color", "#FFF");
   });
 
   $("#moclobemide").mouseover(function() {
     $(this).fadeOut(function() {
       $(this).text("Meatballs");
     }).fadeIn(1000);
-    $(this).css("color", "#A8392A");
+    $("#meatballs").css("color", "#A8392A");
   });
   
   $("#moclobemide").mouseout(function() {
     $(this).fadeOut(function() {
       $(this).text("Moclobemide");
     }).fadeIn(500);
-    $(this).css("color", "#FFF");
+    $("#meatballs").css("color", "#FFF");
   }); 
 
   $("#anti").mouseover(function() {
     $(this).fadeOut(function() {
       $(this).text("Liver");
     }).fadeIn(1000);
-    $(this).css("color", "#6B5CC8");
+    $("#liver").css("color", "#6B5CC8");
   });
   
   $("#anti").mouseout(function() {
     $(this).fadeOut(function() {
       $(this).text("Antimuscarinic");
     }).fadeIn(500);
-    $(this).css("color", "#FFF");
+    $("#liver").css("color", "#FFF");
   }); 
 
   $("#etham").mouseover(function() {
     $(this).fadeOut(function() {
       $(this).text("Steak & Kidney");
     }).fadeIn(1000);
-    $(this).css("color", "#E0E400");
+    $("#steak").css("color", "#E0E400");
   });
   
   $("#etham").mouseout(function() {
     $(this).fadeOut(function() {
       $(this).text("Ethambutol");
     }).fadeIn(500);
-    $(this).css("color", "#FFF");
+    $("#steak").css("color", "#FFF");
   });
   
   $("#saq").mouseover(function() {
     $(this).fadeOut(function() {
       $(this).text("Sandwich");
     }).fadeIn(1000);
-    $(this).css("color", "#00A424");
+    $("#sandwich").css("color", "#00A424");
   });
   
   $("#saq").mouseout(function() {
     $(this).fadeOut(function() {
       $(this).text("Saquinavar");
     }).fadeIn(500);
-    $(this).css("color", "#FFF");
+    $("#sandwich").css("color", "#FFF");
   }); 
 
   $("#lisino").mouseover(function() {
     $(this).fadeOut(function() {
       $(this).text("Dumplings");
     }).fadeIn(1000);
-    $(this).css("color", "#E61BEA");
+    $("#dumpling").css("color", "#E61BEA");
   });
   
   $("#lisino").mouseout(function() {
     $(this).fadeOut(function() {
       $(this).text("Lisinopril");
     }).fadeIn(500);
-    $(this).css("color", "#FFF");
+    $("#dumpling").css("color", "#FFF");
   }); 
 
   $("#rifampicin").mouseover(function() {
     $(this).fadeOut(function() {
       $(this).text("Pasty");
     }).fadeIn(1000);
-    $(this).css("color", "#99D4FF");
+    $("#cornish").css("color", "#99D4FF");
   });
   
   $("#rifampicin").mouseout(function() {
     $(this).fadeOut(function() {
       $(this).text("Rifampicin");
     }).fadeIn(500);
-    $(this).css("color", "#FFF");
+    $("#cornish").css("color", "#FFF");
   });
   
   $("#ondan").mouseover(function() {
     $(this).fadeOut(function() {
       $(this).text("Omelette");
     }).fadeIn(1000);
-    $(this).css("color", "#CEA100");
+    $("#omelette").css("color", "#CEA100");
   });
   
   $("#ondan").mouseout(function() {
     $(this).fadeOut(function() {
       $(this).text("Ondansetron");
     }).fadeIn(500);
-    $(this).css("color", "#FFF");
+    $("#omelette").css("color", "#FFF");
   });
 
   $("#lami").mouseover(function() {
     $(this).fadeOut(function() {
       $(this).text("Salad");
     }).fadeIn(1000);
-    $(this).css("color", "#8DB716");
+    $("#salad").css("color", "#8DB716");
   });
   
   $("#lami").mouseout(function() {
     $(this).fadeOut(function() {
       $(this).text("Lamivudine");
     }).fadeIn(500);
-    $(this).css("color", "#FFF");
+    $("#salad").css("color", "#FFF");
   }); 
 
   $("#pyri").mouseover(function() {
@@ -243,19 +231,42 @@ $(document).ready(function() {
     $(this).fadeOut(function() {
       $(this).text("Beans & Chips");
     }).fadeIn(1000);
-    $(this).css("color", "#A65532");
+    $("#chips").css("color", "#A65532");
   });
   
   $("#chips").mouseout(function() {
     $(this).fadeOut(function() {
       $(this).text("Chips");
     }).fadeIn(500);
-    $(this).css("color", "#FFF");
-  }); 
+    $("#chips").css("color", "#FFF");
+  });
+
+  $("#about").mouseover(function() {
+    $(this).fadeOut(function() {
+      $(this).text("Hirst");
+    }).fadeIn(100);
+  });
+
+  $("#about").mouseout(function() {
+    $(this).fadeOut(function() {
+      $(this).text("About");
+    }).fadeIn(500);
+  });
+
+  $("#cabinet").mouseover(function() {
+    $(this).fadeOut(function() {
+      $(this).text("Pantry");
+    }).fadeIn(100);
+  });
+
+  $("#cabinet").mouseout(function() {
+    $(this).fadeOut(function() {
+      $(this).text("Cabinet");
+    }).fadeIn(500);
+  });
 
   // ------------------------
 
-  //Display image on click
   $("#mushroom").on('click', function(){
     $(this).css("color", "#24B0ff");
     $("#mushroom-img").css({
@@ -263,6 +274,8 @@ $(document).ready(function() {
       "left":"800px",
       "z-index":"2"
     });
+    $("#pyri").css("color", "#24B0FF");
+    $("#clear").css("color", "#FFF");
   });
 
   $("#beef").on('click', function(){
@@ -271,6 +284,8 @@ $(document).ready(function() {
       "left":"800px",
       "z-index":"2"
     });
+    $("#amiodarone").css("color", "#CE0000");
+    $("#clear").css("color", "#FFF");
   });
 
   $("#chicken").on('click', function(){
@@ -280,6 +295,8 @@ $(document).ready(function() {
       "top":"200px",
       "z-index":"2"
     });
+    $("#morphine").css("color", "#FF7438");
+    $("#clear").css("color", "#FFF");
   });
 
   $("#meatballs").on('click', function(){
@@ -289,6 +306,8 @@ $(document).ready(function() {
       "top":"200px",
       "z-index":"2"
     });
+    $("#moclobemide").css("color", "#A8392A");
+    $("#clear").css("color", "#FFF");
   });
 
   $("#liver").on('click', function(){
@@ -298,6 +317,8 @@ $(document).ready(function() {
       "top":"200px",
       "z-index":"2"
     });
+    $("#anti").css("color", "#6B5CC8");
+    $("#clear").css("color", "#FFF");
   });
 
   $("#steak").on('click', function(){
@@ -307,6 +328,8 @@ $(document).ready(function() {
       "top":"300px",
       "z-index":"2"
     });
+    $("#etham").css("color", "#E0E400");
+    $("#clear").css("color", "#FFF");
   });
 
   $("#sandwich").on('click', function(){
@@ -316,6 +339,8 @@ $(document).ready(function() {
       "top":"200px",
       "z-index":"2"
     });
+    $("#saq").css("color", "#00A424");
+    $("#clear").css("color", "#FFF");
   });
 
   $("#dumpling").on('click', function(){
@@ -325,6 +350,8 @@ $(document).ready(function() {
       "top":"200px",
       "z-index":"2"
     });
+    $("#lisino").css("color", "#E61BEA");
+    $("#clear").css("color", "#FFF");
   });
 
   $("#omelette").on('click', function(){
@@ -334,6 +361,8 @@ $(document).ready(function() {
       "top":"150px",
       "z-index":"2"
     });
+    $("#ondan").css("color", "#CEA100");
+    $("#clear").css("color", "#FFF");
   });
 
   $("#salad").on('click', function(){
@@ -343,15 +372,19 @@ $(document).ready(function() {
       "top":"100px",
       "z-index":"2"
     });
+    $("#lami").css("color", "#8DB716");
+    $("#clear").css("color", "#FFF");
   });
 
   $("#cornish").on('click', function(){
-    $("#salad-img").css({
+    $("#cornish-img").css({
       "display":"block",
       "left":"600px",
       "top":"100px",
       "z-index":"2"
     });
+    $("#rifampicin").css("color", "#99D4FF");
+    $("#clear").css("color", "#FFF");
   });
 
   $("#beans").on('click', function(){
@@ -361,6 +394,8 @@ $(document).ready(function() {
       "top":"200px",
       "z-index":"2"
     });
+    $("#chips").css("color", "#A65532");
+    $("#clear").css("color", "#FFF");
   });
 
   $("#sausage").on('click', function(){
@@ -370,11 +405,54 @@ $(document).ready(function() {
       "top":"200px",
       "z-index":"2"
     });
+    $("#intraconazole").css("color", "#FF7272");
+    $("#clear").css("color", "#FFF");
   });
-  
 
-  
 });
+
+// Assign draggable to all pieces
+for (var i = 0; i < document.getElementsByClassName("pieces").length; i++) {
+  dragElement(document.getElementsByClassName("pieces")[i]);
+};
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  
+  elmnt.onmousedown = dragMouseDown;
+  
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+
 
 
  
