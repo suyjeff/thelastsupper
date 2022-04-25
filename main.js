@@ -263,7 +263,6 @@ $(document).ready(function() {
       "left":"800px",
       "z-index":"2"
     });
-    // $("#items").css({"color":"f9f9f9"});
   });
 
   $("#beef").on('click', function(){
@@ -357,6 +356,15 @@ $(document).ready(function() {
 
   $("#beans").on('click', function(){
     $("#beans-img").css({
+      "display":"block",
+      "left":"200px",
+      "top":"200px",
+      "z-index":"2"
+    });
+  });
+
+  $("#sausage").on('click', function(){
+    $("#sausage-img").css({
       "display":"block",
       "left":"200px",
       "top":"200px",
