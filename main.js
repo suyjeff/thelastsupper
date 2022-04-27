@@ -236,7 +236,7 @@ $(document).ready(function() {
   
   $("#chips").mouseout(function() {
     $(this).fadeOut(function() {
-      $(this).text("Chips");
+      $(this).text("Albuterol");
     }).fadeIn(500);
     $("#chips").css("color", "#FFF");
   });
